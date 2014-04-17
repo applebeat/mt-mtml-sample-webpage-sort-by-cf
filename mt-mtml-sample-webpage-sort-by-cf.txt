@@ -2,12 +2,12 @@
   <li><a href="<$mt:Link template="メインページ"$>">ホーム</a></li>
 <mt:Pages>
   <mt:SetVarBlock name="source">
-    <mt:If tag="PageDataOrderofnavimenu">
+    <mt:If tag="PageDataSortbycf">
       <li><a href="<$mt:PagePermalink$>"><$mt:PageTitle$></a></li>
     </mt:If>
   </mt:SetVarBlock>
   <mt:SetVarBlock name="navilink" key="$source">
-    <mt:PageDataOrderofnavimenu>
+    <mt:PageDataSortbycf>
   </mt:SetVarBlock>
 </mt:Pages>
 <mt:Loop name="navilink" sort_by="value numeric">
