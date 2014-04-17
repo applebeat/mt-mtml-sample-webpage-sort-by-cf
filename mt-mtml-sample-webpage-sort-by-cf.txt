@@ -1,0 +1,16 @@
+<ul>
+  <li><a href="<$mt:Link template="メインページ"$>">ホーム</a></li>
+<mt:Pages>
+  <mt:SetVarBlock name="source">
+    <mt:If tag="PageDataOrderofnavimenu">
+      <li><a href="<$mt:PagePermalink$>"><$mt:PageTitle$></a></li>
+    </mt:If>
+  </mt:SetVarBlock>
+  <mt:SetVarBlock name="navilink" key="$source">
+    <mt:PageDataOrderofnavimenu>
+  </mt:SetVarBlock>
+</mt:Pages>
+<mt:Loop name="navilink" sort_by="value numeric">
+  <mt:Var name="__key__">
+</mt:Loop>
+</ul>
